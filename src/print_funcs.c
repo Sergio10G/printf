@@ -6,9 +6,10 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 19:05:57 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/18 20:37:30 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/18 20:45:29 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "../includes/printf.h"
 
 int	ft_putchar(int c)
 {
