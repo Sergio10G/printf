@@ -1,2 +1,2 @@
 # printf
-One of the first projects in 42 Cursus, printf.
+My second project during 42 cursus.
