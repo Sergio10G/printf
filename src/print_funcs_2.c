@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   print_funcs_2.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/18 20:34:08 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 16:44:16 by sdiez-ga         ###   ########.fr       */
+/*   Created: 2022/01/19 16:39:20 by sdiez-ga          #+#    #+#             */
+/*   Updated: 2022/01/19 17:04:55 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/printf.h"
 
-char	*ft_strtoupper(char *str)
+int	ft_puthex(unsigned int n)
 {
-	size_t	i;
+	char	*hex_str;
+	int		size;
 
-	i = 0;
-	while (str[i])
-	{
-		if (ft_isalpha(str[i]))
-			str[i] = ft_toupper(str[i]);
-		i++;
-	}
-	return (str);
+	hex_str = ft_ltohexa((unsigned long int) n);
+	size = ft_putstr(hex_str);
+	free(hex_str);
+	return (size);
+}
+
+int	ft_puthexcap(unsigned int n)
+{
+	char	*hex_str;
+	int		size;
+
+	hex_str = ft_ltohexa((unsigned long int) n);
+	hex_str = ft_strtoupper(hex_str);
+	size = ft_putstr(hex_str);
+	free(hex_str);
+	return (size);
 }

@@ -6,7 +6,7 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 19:18:04 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/18 20:28:55 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/19 17:03:22 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/printf.h"
@@ -18,12 +18,6 @@ char	*ft_uitoa(unsigned int n)
 	int		i;
 	int		j;
 
-	if (n < 10)
-	{
-		out = ft_calloc(2, sizeof(char));
-		out[0] = n + '0';
-		return (out);
-	}
 	ft_bzero(temp, 11);
 	i = 9;
 	while (n != 0)
@@ -36,7 +30,10 @@ char	*ft_uitoa(unsigned int n)
 		return (0);
 	j = 0;
 	while (temp[i + j])
-		out[j++] = temp[i + j];
+	{
+		out[j] = temp[i + j];
+		j++;
+	}
 	return (out);
 }
 
@@ -56,11 +53,14 @@ char	*ft_ltohexa(unsigned long int n)
 		temp[i--] = base[(unsigned int) n % 16];
 		n /= 16;
 	}
-	out = ft_calloc(16 - --i + 1, sizeof(char));
+	out = ft_calloc(16 - ++i + 1, sizeof(char));
 	if (!out)
 		return (0);
 	j = 0;
 	while (temp[i + j])
-		out[j++] = temp[i + j];
+	{
+		out[j] = temp[i + j];
+		j++;
+	}
 	return (out);
 }

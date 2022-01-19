@@ -6,7 +6,7 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:51:09 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/18 20:40:11 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/19 16:38:52 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@
 
 	/* printf.c functions */
 int		ft_printf(const char *str, ...);
-
-	/* str_comprehension.c functions */
 int		ft_comprehend(char fs, va_list args);
 
 	/* print_funcs.c functions */
