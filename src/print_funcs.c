@@ -6,10 +6,10 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 19:05:57 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 18:22:14 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/21 15:27:01 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../includes/printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_putchar(int c)
 {
@@ -48,6 +48,8 @@ int	ft_putuint(unsigned int n)
 	char	*uint_str;
 	int		size;
 
+	if (n == 0)
+		return (ft_putstr("0"));
 	uint_str = ft_uitoa(n);
 	size = ft_putstr(uint_str);
 	free(uint_str);
@@ -59,6 +61,8 @@ int	ft_putptr(void *ptr)
 	char	*hex_str;
 	int		size;
 
+	if (!ptr)
+		return (ft_putstr("0x0"));
 	hex_str = ft_ltohexa((unsigned long int) ptr);
 	size = ft_putstr("0x");
 	size += ft_putstr(hex_str);

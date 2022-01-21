@@ -6,20 +6,17 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:51:09 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 16:38:52 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/21 15:36:45 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 //	Existing libraries
 
 # include "../libft/libft.h" 
 # include <stdarg.h>
-
-// Structs
-
 
 // Functions
 

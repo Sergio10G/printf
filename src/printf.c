@@ -6,11 +6,11 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 18:09:47 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 18:21:31 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/21 15:25:26 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_printf(const char *str, ...)
 {

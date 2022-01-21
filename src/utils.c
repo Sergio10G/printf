@@ -6,11 +6,11 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 20:34:08 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 16:44:16 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/21 15:25:10 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/printf.h"
+#include "../includes/ft_printf.h"
 
 char	*ft_strtoupper(char *str)
 {

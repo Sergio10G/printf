@@ -6,10 +6,10 @@
 /*   By: sdiez-ga <sdiez-ga@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 19:18:04 by sdiez-ga          #+#    #+#             */
-/*   Updated: 2022/01/19 17:03:22 by sdiez-ga         ###   ########.fr       */
+/*   Updated: 2022/01/21 15:24:53 by sdiez-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../includes/printf.h"
+#include "../includes/ft_printf.h"
 
 char	*ft_uitoa(unsigned int n)
 {
